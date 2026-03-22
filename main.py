@@ -17,7 +17,18 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 # Load dataset
-data = pd.read_csv("data/raw_dataset/phishing_email.csv")
+import gdown
+
+csv_path = "data/raw_dataset/phishing_email.csv"
+
+if not os.path.exists(csv_path):
+    print("Downloading dataset from Google Drive...")
+    os.makedirs("data/raw_dataset", exist_ok=True)
+    url = "https://drive.google.com/uc?id=1os1cCaAQWBjqz4i3vleS-zrK8c6MeJbm"
+    gdown.download(url, csv_path, quiet=False, fuzzy=True)
+    print("Download complete!")
+
+data = pd.read_csv(csv_path)
 
 print("Dataset loaded successfully")
 print(data.columns)
