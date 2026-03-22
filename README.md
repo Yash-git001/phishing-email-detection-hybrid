@@ -34,9 +34,13 @@ It classifies emails as:
 ## 🚀 How to Run the Project
 
 ### Step 1: Install dependencies
+
 pip install -r requirements.txt
 
 ### Step 2: Run the app
+
+python main.py
+
 streamlit run app.py
 
 
