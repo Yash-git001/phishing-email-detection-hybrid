@@ -53,6 +53,11 @@ streamlit run app.py
 ---
 📷 Screenshots
 
+<img width="975" height="405" alt="image" src="https://github.com/user-attachments/assets/538e7208-25cf-414e-8a61-9e681390e178" />
+
+<img width="975" height="975" alt="image" src="https://github.com/user-attachments/assets/b31b6804-650c-483c-9ee3-4a2d9199b3ad" />
+
+
 
 📌 Author
 Vishvan Pugaleshwaran 
