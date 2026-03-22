@@ -22,11 +22,13 @@ st.write("Hybrid phishing detection using Machine Learning + Rule Based Analysis
 # ------------------------------
 
 try:
-    model = pickle.load(open("phishing_model.pkl", "rb"))
-    vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
+    model = pickle.load(open("model/phishing_model.pkl", "rb"))
+vectorizer = pickle.load(open("model/vectorizer.pkl", "rb"))
+
 except:
     model = None
     vectorizer = None
+    st.error(f"Model not loaded: {e}")
 
 # ------------------------------
 # Helper Functions
