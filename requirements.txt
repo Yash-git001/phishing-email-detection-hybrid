@@ -4,3 +4,4 @@ numpy
 scikit-learn
 nltk
 joblib
+gdown>=4.7.1
